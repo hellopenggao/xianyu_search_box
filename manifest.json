@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "闲鱼搜索框",
+  "version": "1.0",
+  "description": "显示闲鱼网页版搜索框。",
+  "icons": {
+    "128": "icon.png"
+  },
+  "author": "hellopenggao@gmail.com",
+  "browser_action": {
+    "default_icon": {
+      "128": "icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://2.taobao.com/*","*://s.2.taobao.com/*"],
+      "js": ["show_search_box.js","search_html.js"]
+    }
+  ],
+  "permissions": [
+    "<all_urls>",
+    "webNavigation",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking"
+  ]
+}
