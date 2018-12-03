@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "闲鱼搜索框",
-  "version": "1.1",
+  "version": "1.2",
   "description": "显示闲鱼网页版搜索框。",
   "icons": {
     "128": "icon.png"
